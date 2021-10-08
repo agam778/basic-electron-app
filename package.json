@@ -1,0 +1,78 @@
+{
+  "name": "name-of-package-without-spaces-and-no-capital-letters",
+  "productName": "App Name (Can Include spaces and capital letters)",
+  "version": "x.x.x (for example '0.1.0')",
+  "description": "App Description",
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "github-repository-link-if-any-otherwise-remove"
+  },
+  "build": {
+    "appId": "com.yourname.appnamewithoutspacesandnocapslock",
+    "productName": "App Name (Can Include spaces and caps lock)",
+    "linux": {
+      "category": "Category, check list here - https://specifications.freedesktop.org/menu-spec/latest/apa.html",
+      "desktop": {
+        "Comment": "App Description",
+        "Name": "App Name (Can Include spaces and capital letters)",
+        "StartupNotify": "true",
+        "Terminal": "false",
+        "Type": "Application",
+        "Categories": "App Category - Check list here - https://specifications.freedesktop.org/menu-spec/latest/apa.html;"
+      },
+      "icon": "icon.png",
+      "artifactName": "App-Name-Setup-${version}-x86_64.${ext}",
+      "executableName": "App Name",
+      "maintainer": "Your Name <your@email.id>",
+      "target": [
+        "deb",
+        "rpm",
+        "AppImage",
+        "(Remove or add accordingly)"
+      ]
+    },
+    "deb": {
+      "compression": "bzip2"
+    },
+    "mac": {
+      "category": "public.app-category.category, check list here - https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/LaunchServicesKeys.html#//apple_ref/doc/uid/TP40009250-SW8",
+      "target": [
+        "dmg"
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": false,
+      "license": "license.txt"
+    },
+    "win": {
+      "target": [
+        "nsis"
+      ]
+    },
+    "directories": {
+      "output": "release"
+    }
+  },
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "author": {
+    "name": "Your name",
+    "email": "your@email.id",
+    "url": "https://yourwebsite.ifany"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^15.1.1",
+    "electron-builder": "^22.11.7"
+  },
+  "dependencies": {
+    "about-window": "^1.15.0",
+    "is-online": "^9.0.1"
+  }
+}
