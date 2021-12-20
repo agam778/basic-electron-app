@@ -1,12 +1,8 @@
 // Add all dependencies
 
-const { app, Menu, BrowserWindow } = require("electron");
-const { dialog } = require("electron");
+const { app, Menu, BrowserWindow, electron, dialog } = require("electron");
 const openAboutWindow = require("about-window").default;
-// const join = require("path").join;
 const isMac = process.platform === "darwin";
-const path = require("path");
-const electron = require("electron");
 const isOnline = require("is-online");
 
 // Top Menu Bar
@@ -144,9 +140,9 @@ function createWindow() {
   win.loadURL("https://agam778.is-a.dev", {
     // uncomment below accordingly, first is for "Linux", second for "Windows", and third for "Mac"
     userAgent:
-      "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36",
-    // "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36",
-    // "Mozilla/5.0 (Macintosh; Intel Mac OS X 11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36",
+      "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36",
+    // "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36",
+    // "Mozilla/5.0 (Macintosh; Intel Mac OS X 12_0_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36",
   });
 }
 
