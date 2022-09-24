@@ -73,6 +73,6 @@
   },
   "dependencies": {
     "about-window": "^1.15.2",
-    "is-online": "^9.0.1"
+    "is-online": "^10.0.0"
   }
 }
